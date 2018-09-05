@@ -1,0 +1,17 @@
+<mat-toolbar class="innerToolbar">
+  <mat-toolbar-row>
+    <h1>HN Feed</h1>
+    <p class="slogan">We ❤ hacker news!</p>
+    <span class="toolbar-spacer"></span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-list>
+  <h3 mat-subheader>Posts list</h3>
+  <mat-list-item *ngFor="let post of posts; let i = index" (mouseleave)="itemHovered()" (mouseenter)="itemHovered((i))">
+    <mat-icon mat-list-icon>account_circle</mat-icon>
+    <h4 mat-line>{{post?.story_title}}</h4>
+    <p mat-line> <b style="color: #494949">Author: </b>{{post?.author}} | <b style="color: #494949">Posted: </b> {{post?.created_at | timeAgo}} </p>  
+    <button class="removeButton" *ngIf="showRemove === i" mat-button (click)="removeItem(post.objectID, i)"><mat-icon mat-list-icon>delete</mat-icon></button>
+  </mat-list-item>
+</mat-list>

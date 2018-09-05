@@ -1,0 +1,24 @@
+The user should be able to view a web page which shows the most recent
+posts in date order. They should be able to click the delete button to delete an
+individual post from this view. One a post is deleted it should not reappear,
+even if the HN API returns it. Also, keep an eye on how the date is presented
+on each row in the wireframes.
+
+You must use the following technologies to build the app:
+- Server component: Node.js + Express / KOA + MongoDB
+- Client component: Angular + Angular Material (https://material.angular.io/)
+- TypeScript
+- Grunt / Gulp
+Other that that you are free to use any suitable npm or other libraries.
+
+Send us your completed code as a public Github repo url emailed to
+veronika@reigndesign.com. Include a README which explains anything we
+need to do to run the demo app, for example: setting up a database, forcing a
+data refresh to populate the DB for the first time, etc.
+If you have any questions about the task, please let us know.
+
+Once again, thank you for your time and we are looking forward to see the
+results!
+
+Cheers,
+- Veronika
