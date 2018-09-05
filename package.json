@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node app.js",
-    "build": "ng build --prod --build-optimizer",
+    "build": "ng build",
     "postinstall": "npm run build",
     "ngDev": "ng serve --proxy-config pc.json --open"
   },
