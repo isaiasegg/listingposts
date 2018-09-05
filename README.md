@@ -1,4 +1,4 @@
-# ReignDesign
+# PostsListing
 - Clone the repo
 - Run npm i
 - Create an .env file at the rut of the repo and create the variable: MONGODB_URI = 'your local mongoDB url'
